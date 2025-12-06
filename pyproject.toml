@@ -1,0 +1,18 @@
+[project]
+name = "keystone-schedule"
+version = "0.1.0"
+description = "AI-powered study schedule generator for Keystone"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.122.0",
+    "numpy>=2.3.5",
+    "ortools>=9.14.6206",
+    "pydantic>=2.12.5",
+    "pytest>=9.0.1",
+    "uvicorn>=0.38.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
